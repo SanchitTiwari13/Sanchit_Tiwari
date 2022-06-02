@@ -1,1 +1,55 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div style="text-align:center" >
+		<h1 id="diceNum" align="center">Click the "Roll dice" button to roll a dice</h1>
+    	<button type="button" onclick="rollDice()" >Roll dice</button>
+	</div>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+		/*
+		.h{
+			color:#00ff00;
+			background-color:#303030;
+			border-radius:5px;
+		}
+		.Bebas{
+			font-family: 'Bebas Neue';
+		}
+		.img{
+			width: 440px;
+		}
+		*/
+		p,h1,h2,h3,h4,h5,h6{
+			font-family:'Bebas Neue';
+		}
+		button{
+			color:#00ff00;
+			background-color:#303030;
+			border-radius:5px;
+			font-family:'Bebas Neue';
+			font-size: 70px;
+			width: 180px;
+			height: 180px;
+		}
+		input{
+			font-family:'Bebas Neue';
+			color:#00ff00;
+			background-color:#303030;
+			border-radius:5px;
+		}
+	</style>
+	<script>
+		function rollDice() {
+			let dice = Math.ceil(Math.random()*6);
+			document.getElementById('diceNum').innerHTML = dice;
+		}
+</script>
+</body>
+</html>
