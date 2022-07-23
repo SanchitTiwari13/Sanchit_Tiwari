@@ -8,6 +8,12 @@
 	<title>Document</title>
 </head>
 <body>
+	<script defer type="text/javascript" charset="utf-8">
+		function rollDice() {
+	let dice = Math.ceil(Math.random()*6);
+	document.getElementById('diceNum').innerHTML = dice;
+}
+	</script>
 	<div style="text-align:center" >
 		<h1 id="diceNum" align="center">Click the "Roll dice" button to roll a dice</h1>
     	<button type="button" onclick="rollDice()" >Roll dice</button>
